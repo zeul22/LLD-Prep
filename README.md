@@ -40,3 +40,139 @@ HLD focusses on the tech-stack while LLD focusses on the implementation. for ins
 
 ## DSA is the brain of the application, LLD is the skeleton, HLD is the outer skin !
 
+## OOPS (Object Oriented Programming)
+
+Before we even start with OOPS, what was the reason to introduce OOPS? 
+
+A. Machine Language: 0100011 0001100 
+1. Tediuos AF!
+2. Prone to Errors
+3. Not Scalable
+
+
+B. Assembly Language [MOV A, 61H (Move 61H to A)]:
+1. Tighlt coupled
+2. Not Scalable
+3. Prone to Error
+
+C. Procedural Language:
+1. Introduced Functions, Loops, Blocks, Switch Statements, Condtional Statements
+2. Could not solve complex problems
+3. Cookbook type of shit, do this, then do this, then do that type of thing!
+
+D. OOPS 
+1. Real World Modelling which was not present in the previous type of languages. Real world instance/objects.
+2. Data Security 
+3. Highly scalable and reusable applications
+
+
+in OOPS, Objects Interacts!
+
+Object's characters:
+1. engine
+2. tyres
+3. Model
+
+Object's behaviours:
+1. accelerate
+2. brake
+
+
+```
+// How OOPS 
+Class Car {
+    string model
+    string wheel
+    string engine
+
+    bool isEngineOn;
+
+    Car(string model,string wheel, string engine){ // Constructor
+        this.model=model;
+        this.wheel=wheel;
+        this.engine=engine
+    }
+    Car(){ // Constructor Overloading
+
+    }
+
+
+    engineOn(){
+        this.isEngineOn=true;
+    }
+
+}
+
+class Owner {
+    Car car;
+
+    Owner (Car car){
+        this.car=new car();
+    }
+
+    drive(){
+        if(this.car.engineOn){
+            this.car.accelerate();
+        }
+        else{
+            this.car.engineOn=true; //getter-setters needs to be done
+
+        }
+    }
+
+
+}
+
+const myCar=new Car(model,wheel,engine);
+const owner1=new Owner(myCar);
+
+```
+
+Whenever you see a code, always see it as objects interacting with each other!
+
+Pillar of OOPS:
+1. Abstraction
+
+for a car to start, you dont have to know how engine works, how gearbox works! thats abstraction!
+
+for the TV as well, you dont know the wirings, you dont how click of one button makes you change the channgels, you just do! 
+
+
+ohh nice!
+
+class SportsCar: public car {} // how extends is done in cpp
+
+
+2. Encapsulation
+
+People, also me, get it confused b/w Encapsulation & Abstraction. 
+Encapulation is a like a capsule, which means it has characters and behaviours, all in one, inside on box!
+
+// variables -> characters
+// methods -> behaviours
+
+Encapsulation adds one further point which is about "Data Security"
+
+Abstraction is responsible for Data hiding (you may or may not see it, doesn't matter) but Encapsulation is responsible for Data security.
+
+For instance, Car odometer is an example of encapsulation, you cannot change it, Data security. Car's signal, you cannot change/alter it. Again. Data Security. 
+
+
+What to do so outsiders cant access its characters. This can be done via "Access Modifiers"
+
+Types of Access Modifiers:
+1. Public : can be accessed by the outsiders
+2. Private : cant be accessed by the outsiders (can be done only by getter-setters)
+3. Protected : you can only accessed if it comes out of it or is of the same family (Inheritance)
+
+
+
+3. Inheritance
+4. Polymorphism
+
+
+
+
+
+
+
