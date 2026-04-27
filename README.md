@@ -1,9 +1,9 @@
 ## What is LLD?
-```
+
 Consider Sorting or Searching an isolated problem and when you build an application on top of these isolated problem then that is LLD.
 
 In more layman language, multiple DSA concepts used 
-```
+
 ### Example:
 Lets say that there are two devs one who knows DSA concepts very well and another one who knows
 DSA + LLD. They both are asked to develop an Uber type app and now they have to find the problem statements 
@@ -32,4 +32,11 @@ Tightly-coupled: means your one part must not fixated to your specific project. 
 ## What is not LLD?
 
 HLD focusses on the tech-stack while LLD focusses on the implementation. for instance, your application might contain SQL/NO-SQL as DB, or you node/Java as the backend, or the servers and how you scale it comes under HLD. Cost optimization is another thing that HLD emphasize on. There are lots of things that HLD handles, in layman language, you develop architectural structure, You draw design/ layout where in LLD you design class-level designs (OOPS!)
+
+### HLD vs LLD vs DSA
+1. HLD describes the architectural design
+2. LLD describes the code structure
+3. DSA is a tool used by LLD
+
+## DSA is the brain of the application, LLD is the skeleton, HLD is the outer skin !
 
