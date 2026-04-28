@@ -171,6 +171,16 @@ Types of Access Modifiers:
 4. Polymorphism
 
 
+# Patterns in LLD (Top 13 are most important)
+
+1. Strategy Pattern
+2. Factory Pattern
+3. Observer Pattern
+4. State Pattern
+5. Singleton Pattern 
+6. Builder Pattern
+
+
 
 
 
