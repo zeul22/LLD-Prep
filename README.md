@@ -236,6 +236,8 @@ In Behavioural, Sequence Diagrams (does not ask muchh but helps in understanding
 1. Class Structure
 2. Association/Connection
 
+## Class Structural UML
+
 For showing Access Modifiers in Class Structural UML Diagram
 Public -> +
 Protected -> #
@@ -245,9 +247,22 @@ Private -> -
 1. Abstract class -> <<abstract>>
 2. Concrete class -> nothing to write on the top of Class box
 
+
+## Association
+2 Types of Association:
+
+### Simple, Aggregate
+
+Composition is "has a relationship" while Inheritence "is a relationship"
+
+
 # Sequence Behavioural UML Diagram
+It isnt asked much but useful at specific usecase!
+
+UML diagrams needed to be studied once more, lets see if its really needed
 
 # SOLID (Single Resposibility, Open-Close, Liskov, Interface Segregation, Dependency Inversion)
+
 
 # Patterns in LLD (Top 13 are most important)
 
@@ -269,7 +284,7 @@ Private -> -
 # Q/A
 
 1. Why the Operator Overloaing is Cpp but not in any other languages?
-
+2. Create a UML Diagram for Car, Electric Car & Manual Car. 
 
 
 
