@@ -131,7 +131,7 @@ const owner1=new Owner(myCar);
 Whenever you see a code, always see it as objects interacting with each other!
 
 Pillar of OOPS:
-1. Abstraction
+# 1. Abstraction
 
 for a car to start, you dont have to know how engine works, how gearbox works! thats abstraction!
 
@@ -143,7 +143,7 @@ ohh nice!
 class SportsCar: public car {} // how extends is done in cpp
 
 
-2. Encapsulation
+# 2. Encapsulation
 
 People, also me, get it confused b/w Encapsulation & Abstraction. 
 Encapulation is a like a capsule, which means it has characters and behaviours, all in one, inside on box!
@@ -167,9 +167,87 @@ Types of Access Modifiers:
 
 
 
-3. Inheritance
-4. Polymorphism
+# 3. Inheritance 
+(Parent-Child Relationship)
 
+```
+
+class Car{
+    protected  String model="default";
+    protected  String brand="default";
+    protected  String engine="default";
+
+    Car(String model,String brand,String engine){
+        this.model=model;
+        this.engine=engine;
+        this.brand=brand;
+    }
+    Car(){
+
+    }
+}
+
+class Automatic extends Car{
+    Automatic(){
+        super();
+    }
+    Automatic(String model,String engine, String brand){
+        super(model,brand,engine);
+    }
+}
+
+class Manual extends Car{
+    Manual(){
+        super();
+    }
+    Manual(String model,String engine, String brand){
+        super(model,brand,engine);
+    }
+}
+```
+
+mostly whenever you inherit, you will "publicly" inherit at most cases. 
+
+
+
+# 4. Polymorphism
+
+I dont always remember the polymorphism, need to understand this very well!
+To make it simply understand, consider tiger, human, duck which extends from animal class but
+how the run() behaviour works across these 3 different animal extended class. 
+1. Same behaviour changes across classes (overriding)
+2. Now consider there's lion behind a human, so the run behaviour might change to a normal situation so run behaviour changes in the same class. (overloading)
+
+There are 2 types:
+1. Static Polymorphism (This is scenario 2, which comes under method overloading)
+2. Dynamic Polymorphism (This is scenario 1, which comes under method overriding)
+
+# UML Diagrams
+It is divided into two:
+1. Structural: (Static) gives a static picture of how the application will look like
+2. Behavioural: (Dynamic) gives the idea of how the appilcation, how its object will interact with each other
+
+there are 7 in each of em (total 14 UML diagrams) but practically, we are needed to do only 2 while others are very usecase specific!  
+
+In Strucutral, we need to do class diagrams (99% LLD ,this will be asked)
+In Behavioural, Sequence Diagrams (does not ask muchh but helps in understanding and solving the questions rapidly)
+
+# Class Strucutral UML Diagram
+1. Class Structure
+2. Association/Connection
+
+For showing Access Modifiers in Class Structural UML Diagram
+Public -> +
+Protected -> #
+Private -> -
+
+2 types of class:
+1. Abstract class -> <<abstract>>
+2. Concrete class -> nothing to write on the top of Class box
+
+# Sequence Behavioural UML Diagram
+
+# SOLID (Single Resposibility, Open-Close, Liskov, Interface Segregation, Dependency Inversion)
 
 # Patterns in LLD (Top 13 are most important)
 
@@ -179,6 +257,18 @@ Types of Access Modifiers:
 4. State Pattern
 5. Singleton Pattern 
 6. Builder Pattern
+7. Decorator Pattern
+8. Chain of Responsibility Pattern
+9. Repository Pattern
+10. Composite Pattern
+11. Adapter Pattern
+12. Facade Pattern 
+
+
+
+# Q/A
+
+1. Why the Operator Overloaing is Cpp but not in any other languages?
 
 
 
