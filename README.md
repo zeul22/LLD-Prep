@@ -262,7 +262,22 @@ It isnt asked much but useful at specific usecase!
 UML diagrams needed to be studied once more, lets see if its really needed
 
 # SOLID (Single Resposibility, Open-Close, Liskov, Interface Segregation, Dependency Inversion)
+S: Single Responsibility Pattern (SRP)
+O: Open-Close Pattern (OCP)
+L: Liskov's Substituition Pattern (LSP)
+I: Interface Segregation Pattern (ISP)
+D: Dependency Inversion Pattern (DIP)
 
+## SRP
+One class should only be responsible for handling only one responsibility (do one behaviour only!) and only one reason to change
+
+## OCP
+A class should be open for extension but close for modification. You cant modify the already existing for enabling a new feature. To do this you can use Abstraction, Inheritance & Polymorphism to come up with the class enabling the new feature!
+
+Whenever you bring new feature, its better to say that you introduce abstraction and then bring inheritance or one that implements the interface afterwards which you use Polymorphism (overriding) to create unique functions
+
+## LSP
+Subclasses should be substitutable for their base classes ( Means you can use the subclass over the base class and still kill!)
 
 # Patterns in LLD (Top 13 are most important)
 
